@@ -351,3 +351,46 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .p-contact {
+  margin: 2% 0;
+}
+.home .form {
+  font-size: 1.6rem;
+}
+.home .form input {
+  font-size: 1.5rem;
+}
+.home .form input:focus {
+  background-color: #22283A;
+  color: white;
+}
+.home .form .short-line {
+  width: 50%;
+  padding: 12px 0;
+  margin: 1% 0;
+  border: 1px solid #22283A;
+  border-radius: 5px;
+}
+.home .form .magazine-type {
+  width: 30%;
+  margin: 1% 0;
+  padding-bottom: 2%;
+}
+.home .form .last-item {
+  margin-bottom: 4%;
+}
+.home .form input[type=submit] {
+  width: 20%;
+  background-color: #22283A;
+  color: white;
+  padding: 10px 2px;
+  font-size: 1.6rem;
+  border: 1px solid #22283A;
+  border-radius: 5px;
+  margin-bottom: 4%;
+}
+.home .form input[type=submit]:hover {
+  background-color: white;
+  color: #22283A;
+  cursor: pointer;
+}
