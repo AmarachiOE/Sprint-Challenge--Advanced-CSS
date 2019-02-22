@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Both adaptive and full responsive websites use media queries to improve design for different screens and devices, full responsive websites can adapt to all screens across devices while adaptive adapts to only limited resolutions due to specified breakpoints in the webpage viewport. Fully responsive websites require more time and money to create, and horizontal elements change to percent-based.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile-first design indicates that  a develop creates a webpage with a mobile resolution in mind first. With media queries, this involves using min-width: the following properties apply when the screen is at this resolution and higher.
+
+Desktop-first design indicates that a webpage is designed with a desktop resolution in mind first. With media queries, this involves using max-width: the following properties apply if the screen is at this resolution and below.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This allows us to utilize base of 10 pixel size (easier sizing calculations) while still allowing us to be responsive (change with default user settings and respond to zoom).
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allows developers to code with CSS is a more efficient and organized (ideally) manner. With preprocessing we can increase the productivity, reusability, and maintenance of CSS codes through new tools such as variables mixins, and nesting. These tools help developers to have better flow to their code, reduce repetitions, and also decrease chances of making typing errors while coding.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept is NESTING!!! Especially with media queries. I really appreciate this still because it allows me to organize my code better, and organization is HUGE for me to stay sane. My least favorite concept mixins because I haven’t had much need for them just yet and they are more complex than the other tools we’ve studied so far. But they’re cool, too.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -104,23 +116,23 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [x] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [x]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [x] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [x] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
