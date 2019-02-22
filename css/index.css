@@ -233,7 +233,12 @@ footer {
   width: 100%;
 }
 .home .intro {
-  margin-top: 11rem;
+  margin-top: 12rem;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    margin-top: 11rem;
+  }
 }
 .home .intro img {
   width: 100%;
@@ -351,8 +356,16 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-.home .p-contact {
+.home .form-section .p-contact {
   margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .home .form-section {
+    padding: 15px;
+    margin: 0;
+    border-top: 1px solid #dee2e6;
+    margin-top: 2%;
+  }
 }
 .home .form {
   font-size: 1.6rem;
@@ -375,6 +388,11 @@ footer {
   width: 30%;
   margin: 1% 0;
   padding-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .home .form .magazine-type {
+    width: 50%;
+  }
 }
 .home .form .last-item {
   margin-bottom: 4%;

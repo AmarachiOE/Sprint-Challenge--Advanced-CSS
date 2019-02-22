@@ -5,7 +5,11 @@
 
   // -------------- HEADER SECTION--------------
   .intro {
-    margin-top: 11rem;
+    margin-top: 12rem;
+
+    @media @phone {
+      margin-top: 11rem;
+    }
     
 
     img {
@@ -129,10 +133,19 @@
   } //.walk
 
   // -------------- FORM SECTIONS ____________
-  
-  .p-contact {
-    margin: 2% 0;
+  .form-section {
+
+    .p-contact {
+      margin: 2% 0;
+    }
+
+    @media @phone {
+      .phone-box-model();
+      border-top: 1px solid @main-border-color;
+      margin-top: 2%;
+    }
   }
+  
 
   .form{
 		font-size: 1.6rem;
@@ -158,6 +171,10 @@
       width: 30%;
       margin: 1% 0;
       padding-bottom: 2%;
+
+      @media @phone {
+        width: 50%;
+      }
     }
 
 
