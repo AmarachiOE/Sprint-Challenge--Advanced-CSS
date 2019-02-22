@@ -1,6 +1,13 @@
 .phone-full-width {
   width: 100%;
 }
+.phone-flex-direction {
+  flex-direction: column;
+}
+.phone-box-model {
+  padding: 15px;
+  margin: 0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -180,7 +187,7 @@ p {
   max-width: 800px;
   display: flex;
   flex-direction: column;
-  padding: 1% 0;
+  padding: 2% 0;
   align-items: center;
 }
 .navigation-links {
@@ -201,6 +208,7 @@ p {
 @media (max-width: 500px) {
   .navigation-links a {
     font-size: 1.5rem;
+    padding: 2% 0;
   }
 }
 h1 {
@@ -224,6 +232,7 @@ footer {
 .home .intro img {
   width: 100%;
   margin: 0 auto;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -242,6 +251,20 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -251,6 +274,11 @@ footer {
 .home .visit-planets p {
   margin-top: 13px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets p {
+    padding-bottom: 3rem;
+  }
+}
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
@@ -258,8 +286,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    padding: 15px;
+    margin: 0;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -281,9 +322,23 @@ footer {
   color: #22283A;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text button {
+    width: 100%;
+    height: 7rem;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0%;
+    padding-bottom: 3rem;
+    order: -1;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
