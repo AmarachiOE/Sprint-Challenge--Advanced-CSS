@@ -1,1 +1,30 @@
-// Mixins Here
+// Mixins in here
+
+.custom-btn (@width: 100%, @btn-bg-color: black) {
+    width: @width;
+    background-color: @btn-bg-color;
+    color: white;
+    padding: 10px 2px;
+    font-size: 1.6rem;
+    border: 1px solid @btn-bg-color;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: white;
+        color: @btn-bg-color;
+        cursor: pointer;
+    }
+}
+
+.phone-full-width {
+    width: 100%;
+}
+
+.phone-flex-direction {
+    flex-direction: column;
+} //ultimately unnecssary... easier to just type it in home-page.less
+
+.phone-box-model {
+    padding: 15px;
+    margin: 0;
+}
