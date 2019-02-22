@@ -203,6 +203,10 @@ footer {
 .home {
   width: 100%;
 }
+.home .intro img {
+  width: 100%;
+  margin: 0 auto;
+}
 .home .intro h2 {
   padding: 15px;
 }
