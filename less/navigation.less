@@ -7,6 +7,10 @@
     display: flex;
     justify-content: center; //to center the actual nav items
 
+    @media @phone {
+        background-color: white;
+    }
+
 }
 
 .navigation-sub-section {
@@ -23,10 +27,18 @@
     display: flex;
     justify-content: space-evenly;
 
+    @media @phone {
+        .phone-full-width();
+    }
+
     a {
         text-decoration: none;
         color: @nav-font;
         font-size: 1.3rem;
+
+        @media @phone {
+            font-size: 1.5rem;
+        }
     }
 }
 
