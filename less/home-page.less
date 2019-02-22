@@ -7,9 +7,6 @@
   .intro {
     margin-top: 11rem;
     
-    @media @phone {
-    margin-top: 10rem;
-    }
 
     img {
       width: 100%;
@@ -128,6 +125,66 @@
         height: auto;
         border-radius: 10px;
       }
+    }//.walk-img
+  } //.walk
+
+  // -------------- FORM SECTIONS ____________
+  .form{
+		font-size: 1.5rem;
+
+    input {
+      font-size: 1.5rem;
+
+      &:focus {
+      background-color: @btn-bg-color;
+      color: white;
+      }
     }
-  }
+
+		.short-line {
+			width: 50%;
+			padding: 12px 0;
+			margin: 1% 0;
+			border: 1px solid @btn-bg-color;
+			border-radius: 5px;
+    }
+    
+    .pick-package {
+      width: 5%;
+      margin: 1% 0;
+      padding-bottom: 2%;
+    }
+
+    .seasons {
+      width: 30%;
+      margin: 1% 0;
+    }
+
+    .last-item {
+      margin-bottom: 4%;
+    }
+
+		.long-line {
+			width: 80%;
+			height: 10rem;
+			padding: 12px 0;
+			margin: 1% 0;
+			border: 1px solid @eastern-blue;
+			border-radius: 5px;
+		}
+
+		input[type=submit] {
+			// width: 20%;
+			// height: 4rem;
+			// margin-top: 1%;
+			// background-color: @eastern-blue;
+			// border: 1px solid @eastern-blue;
+			// border-radius: 5px;
+			// font-size: 1.8rem;
+			// color: white;
+      // cursor: pointer;
+      .custom-btn(20%)
+		}
+	
+
 }// home
