@@ -176,6 +176,9 @@ p {
   border: 1px double #F1F1F1;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
 }
 @media (max-width: 500px) {
   .navigation-section {
@@ -228,6 +231,14 @@ footer {
 }
 .home {
   width: 100%;
+}
+.home .intro {
+  margin-top: 11rem;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    margin-top: 10rem;
+  }
 }
 .home .intro img {
   width: 100%;
